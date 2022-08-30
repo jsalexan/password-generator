@@ -1,5 +1,5 @@
 // Assignment Code
-//Main function that will determine all the elements that go into the password.
+//Button that will be clicked to run the code.
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -68,7 +68,7 @@ if (
   }
 
 //I added this to check my console log to be sure the correct characters were returning.
-console.log(useableCharacters)
+// console.log(useableCharacters)
 
 //Establishes a variable for the final password.
 var password = "";
@@ -94,7 +94,7 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-
+//Pseudocode:
 //Prompt to select criteria: 
   // - How many characters? 8 - 128 (prompt)
   //
@@ -103,7 +103,8 @@ generateBtn.addEventListener("click", writePassword);
   // - Include numbers? (prompt with boolean)
   // - Include special characters? (prompt with boolean)
   //
-  // - Ensure at lease one value type has been selected and that a character length is picked. (input validation) If not, an error message.(code)
-  // - Math code for random generation (code)
-
-  // return ("GENERATED PASSWORD");
+  // - Ensure at lease one value type has been selected and that a character length is picked within the range provided. (input validation) If not, an error message.(code)
+//Compbine all the user choices into one variable.
+//Math code for random generation (code)
+//return ("GENERATED PASSWORD");
+//Figure out the order so that the choices are cleared if the form is to be used again right away.
