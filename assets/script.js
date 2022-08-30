@@ -40,6 +40,7 @@ var userNumbers = window.confirm("Do you want to include numbers? OK for yes, Ca
 
 var userSymbols = window.confirm("Do you want to include symbols? OK for yes, Cancel for no.");
 
+//The following checks to make sure the user has selected at least one character type. If all are false, they get the next prompt.
 if (
   userAlphaUpper === false &&
   userAlphaLower === false &&
@@ -49,27 +50,36 @@ if (
   window.alert("You must select at least one character type. Please start over.");
   }
 
-if (userAlphaUpper===true) {
-  useableCharacters = useableCharacters.concat(alphaUpper)
-}
-if (userAlphaLower===true) {
-  useableCharacters = useableCharacters.concat(alphaLower)
-}
-if (userNumbers===true) {
-  useableCharacters = useableCharacters.concat(numbers)
-}
-if (userSymbols===true) {
-  useableCharacters = useableCharacters.concat(symbols)
-}
+  //The following checks if the user choice for each variable is true, and if so, adds the corresponding character list variable to a new one: useableCharacters.
+  if (userAlphaUpper) {
+    useableCharacters += alphaUpper
+  }
+  
+  if (userAlphaLower) {
+    useableCharacters += alphaLower
+  }
+  
+  if (userNumbers) {
+    useableCharacters += numbers
+  }
+  
+  if (userSymbols) {
+    useableCharacters += symbols
+  }
+
+//I added this to check my console log to be sure the correct characters were returning.
 console.log(useableCharacters)
 
+//Establishes a variable for the final password.
 var password = "";
 
+//Calculates the password by taking the useable characters
 for (var i = 0; i < numCharacters; i++) {
   password += useableCharacters.charAt(Math.floor(Math.random() * useableCharacters.length))
 }
 return password
 }
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
