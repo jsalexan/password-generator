@@ -19,13 +19,13 @@ var symbols = "!@#$%^&*-_=+*";
   // An integer will be parsed from a string.
   var numCharacters = parseInt(userCharNum)
 
-// If the user types in characters that are not numbers, they will get thie alert.
+// If the user types in characters that are not numbers, they will get this alert.
   if (isNaN(numCharacters)) {
     alert("Please start over and enter a valid number between 8-128.")
     return
   } 
 
-// If the user types in numbers outside the given parameters, they will get thie alert.
+// If the user types in numbers outside the given parameters, they will get this alert.
   if (numCharacters < 8 || numCharacters > 128) {
     alert("Please start over and enter a valid number between 8-128.")
     return
@@ -101,7 +101,7 @@ generateBtn.addEventListener("click", writePassword);
   // - Include special characters? (prompt with boolean)
   //
   // - Ensure at lease one value type has been selected and that a character length is picked within the range provided. (input validation) If not, an error message.(code)
-//Compbine all the user choices into one variable.
+//Combine all the user choices into one variable.
 //Math code for random generation (code)
 //return ("GENERATED PASSWORD");
 //Figure out the order so that the choices are cleared if the form is to be used again right away.

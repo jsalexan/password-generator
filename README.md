@@ -12,7 +12,7 @@ This is a random password generator. The goal of this project was to use JavaScr
     6. The password will be written to the form on the webpage for the user to collect.
     7. Ensure that the user could use the form again right away and their previous selections would be cleared.
 
-By meeting these goals, this webpage demonstrates several functions of JavaScript, the form's prompts are clear and simple, and the code is easy to read and understand. I learned more about working with JavaScript, multiple ways to use variables and functions, how to use alerts and prompts, and how to structure the code so it has the correct flow. One challenge was discovering there are multiple ways to achieve one goal, so it was very interesting to attempt to evaluate the best path. I am interested in learning more about this topic and to try creating a more complex generator. 
+By meeting these goals, this webpage demonstrates several functions of JavaScript, the form's prompts are clear and simple, and the code is easy to read and understand. I learned more about working with JavaScript, multiple ways to use variables and functions, how to use alerts and prompts, and how to structure the code so it has the correct flow. One challenge was discovering there are multiple ways to achieve one goal, so it was very interesting to attempt to evaluate the best path. I am interested in learning more about this topic and to try creating a more complex generator in the future. 
 <br>
 <br>
 
@@ -32,7 +32,7 @@ The website (link above) was created to be used on a desktop computer.
 <br>
 
 ## Credits
-The project team consists of the **UW Full Stack Web Development Bootcamp** instructors, teacher assistants, and students, in particular those in the Panic Problems study group. The work was reviewed prior to launch by my tutor, Cory Junier, who assisted in discussing the merits of different solutions and questions about refactoring.
+The project team consists of the **UW Full Stack Web Development Bootcamp** instructors, teacher assistants, and students, in particular those in the Panic Problems study group. The work was reviewed prior to launch by my tutor, Cory Junier, who assisted in discussing flow of the code and questions about commenting.
 <br>
 <br>
 **Third Party References and Tutorials used include:** 
