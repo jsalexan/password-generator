@@ -21,33 +21,33 @@ var symbols = "!@#$%^&*-_=+*";
 
 // If the user types in characters that are not numbers, they will get thie alert.
   if (isNaN(numCharacters)) {
-    window.alert("Please start over and enter a valid number between 8-128.")
+    alert("Please start over and enter a valid number between 8-128.")
     return
   } 
+
 // If the user types in numbers outside the given parameters, they will get thie alert.
   if (numCharacters < 8 || numCharacters > 128) {
-    window.alert("Please start over and enter a valid number between 8-128.")
+    alert("Please start over and enter a valid number between 8-128.")
     return
   }
-  // TODO: Do I want to use an else?
-
+  
 //The following four varients will be true or false based on the user response to the pop up questions.
-var userAlphaLower = window.confirm("Do you want to include lowercase letters? OK for yes, Cancel for no.");
+var userAlphaLower = confirm("Do you want to include lowercase letters? OK for yes, Cancel for no.");
 
-var userAlphaUpper = window.confirm("Do you want to include uppercase letters? OK for yes, Cancel for no.");
+var userAlphaUpper = confirm("Do you want to include uppercase letters? OK for yes, Cancel for no.");
 
-var userNumbers = window.confirm("Do you want to include numbers? OK for yes, Cancel for no.");
+var userNumbers = confirm("Do you want to include numbers? OK for yes, Cancel for no.");
 
-var userSymbols = window.confirm("Do you want to include symbols? OK for yes, Cancel for no.");
+var userSymbols = confirm("Do you want to include symbols? OK for yes, Cancel for no.");
 
-//The following checks to make sure the user has selected at least one character type. If all are false, they get the next prompt.
+//The following checks to make sure the user has selected at least one character type from the four offered. If all are false, they get the next prompt.
 if (
   userAlphaUpper === false &&
   userAlphaLower === false &&
   userNumbers === false &&
   userSymbols === false
 ) {
-  window.alert("You must select at least one character type. Please start over.");
+  alert("You must select at least one character type. Please start over.");
   }
 
   //The following checks if the user choice for each variable is true, and if so, adds the corresponding character list variable to a new one: useableCharacters.
@@ -67,17 +67,14 @@ if (
     useableCharacters += symbols
   }
 
-//I added this to check my console log to be sure the correct characters were returning.
-// console.log(useableCharacters)
+//Establishes a variable for the final output.
+var finalResult = "";
 
-//Establishes a variable for the final password.
-var password = "";
-
-//Calculates the password by taking the useable characters
+//Calculates the password by taking the useable characters and length
 for (var i = 0; i < numCharacters; i++) {
-  password += useableCharacters.charAt(Math.floor(Math.random() * useableCharacters.length))
+  finalResult += useableCharacters.charAt(Math.floor(Math.random() * useableCharacters.length))
 }
-return password
+return finalResult
 }
 
 // Write password to the #password input
